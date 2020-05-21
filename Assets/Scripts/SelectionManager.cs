@@ -6,6 +6,7 @@ public class SelectionManager : MonoBehaviour{
     public Camera cam;
     [SerializeField] private string seleccionableTag = "Seleccionable"; //Tag para poder diferenciar entre objetos que se pueden seleccinar y objetos que no
     [SerializeField] private string llaveTag = "llave";
+    [SerializeField] private string EnemigoTag = "Enemigo";
     [SerializeField] private Material highlightMaterial;
     [SerializeField] private Material defaultMaterial;
     private Material materialAnterior;
@@ -16,11 +17,15 @@ public class SelectionManager : MonoBehaviour{
     private Transform Agarrado; //referencia al objeto que se va a tener en la mano
     //private Bolean agarrandoUnObjeto = false;
 
-    // Update is called once per frame
+   public GameObject Bala;
+   public Transform PuntaPistola;
+
+   public GameObject Audio;
 
     private void Start() {
         _selection = null;
         Agarrado = null;
+        
     }
     void Update(){
 
@@ -56,6 +61,15 @@ public class SelectionManager : MonoBehaviour{
                     
                 
 
+            }else if(selection.CompareTag(EnemigoTag)){ //Si se está apuntando a un enemigo
+                    
+                    if (Input.GetKeyUp("f")){
+                        if(Agarrado != null){
+
+                            Destroy(selection.gameObject, 0.1f);
+
+                            }
+                    }
             }
 
             
@@ -66,6 +80,7 @@ public class SelectionManager : MonoBehaviour{
             if(_selection != null){
                 if(_selection.CompareTag(llaveTag)){
                 LLavesText.llavesCantidad++;
+                //Audio.llaveSonido();
                 Destroy(_selection.gameObject); //Destruir la llave
                 
                 
@@ -126,11 +141,23 @@ public class SelectionManager : MonoBehaviour{
             }else{
                 Debug.Log("No se tiene seleccionada la lampara");
             }
-            
+        }
 
+        //Disparar con la pistola
+        if (Input.GetKeyUp("f")){
+            if(Agarrado != null){
+                print("Disparar"); //Se usa solo para debug de la lampara
+                
+                //Disparar
+                Instantiate(
+                Bala,
+                PuntaPistola.position,
+                PuntaPistola.rotation
+            );
 
-
-
+            }else{
+                Debug.Log("No tienes una pistola");
+            }
         }
 
     }

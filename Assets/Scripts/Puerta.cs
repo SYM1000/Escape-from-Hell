@@ -45,19 +45,19 @@ public class Puerta : MonoBehaviour{
 
         Debug.Log("alguien entró");
 
-        //if(c.tag == "Player"){
+        if(c.tag == "Player"){
             //texto.GetComponent<Text>().text = "Necesitas " + CantidadDeLLaves + " llaves para entrar"; 
             texto.SetActive(true);
             playerInZone = true;
-        //}
+        }
         
     }
 
     private void OnTriggerExit(Collider c){
-        //if(c.tag == "Player"){
+        if(c.tag == "Player"){
             playerInZone = false;
             texto.SetActive(false);
-        //}
+        }
         
     }
 
