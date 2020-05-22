@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Horror Hospital Pack/Hospital.unity
+    guid: 333777fb04f093742ac3cf0ca1b5e242
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 50df7d03d0073834f99fc6b22e107f9c
   m_configObjects: {}
