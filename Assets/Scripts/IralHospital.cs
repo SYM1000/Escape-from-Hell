@@ -19,6 +19,7 @@ public class IralHospital : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         print("Cambio de escena al hospital");
-        SceneManager.LoadScene("Hospital");
+        //SceneManager.LoadScene("Hospital");
+        SceneManager.LoadScene(6);
     }
 }
