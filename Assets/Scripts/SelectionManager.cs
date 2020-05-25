@@ -17,11 +17,6 @@ public class SelectionManager : MonoBehaviour{
     private Transform Agarrado; //referencia al objeto que se va a tener en la mano
     //private Bolean agarrandoUnObjeto = false;
 
-   public GameObject Bala;
-   public Transform PuntaPistola;
-
-   public GameObject Audio;
-
     private void Start() {
         _selection = null;
         Agarrado = null;
@@ -34,6 +29,8 @@ public class SelectionManager : MonoBehaviour{
             var selectionRender = _selection.GetComponent<Renderer>();
             selectionRender.material = materialAnterior;
             _selection = null;
+            SimpleShoot.disparar = true;
+            print("Listo para disparar");
         }
 
 
@@ -47,6 +44,8 @@ public class SelectionManager : MonoBehaviour{
             if(selection.CompareTag(seleccionableTag) || selection.CompareTag(llaveTag)  ){ //Checar si es un objeto que se puede selccionar
                 var selectionRenderer = selection.GetComponent<Renderer>();
                 materialAnterior = selectionRenderer.material;
+                SimpleShoot.disparar = false;
+                print("No disparar");
 
                 if (selectionRenderer != null){ //Aqui se cambia el material para resaltar el objeto visto
 
@@ -55,6 +54,7 @@ public class SelectionManager : MonoBehaviour{
 
                     selectionRenderer.material = highlightMaterial;
                     selectionRenderer.material.color = Color.Lerp( materialAnterior.color, selectionRenderer.material.color, Mathf.Abs( Mathf.Sin( Time.time * 3) ) );
+                    
                 }
                     
                  _selection = selection;
@@ -63,10 +63,10 @@ public class SelectionManager : MonoBehaviour{
 
             }else if(selection.CompareTag(EnemigoTag)){ //Si se está apuntando a un enemigo
                     
-                    if (Input.GetKeyUp("f")){
+                    if ( SimpleShoot.disparar == true && Input.GetButtonDown("Fire1")){
                         if(Agarrado != null){
 
-                            Destroy(selection.gameObject, 0.1f);
+                            Destroy(selection.gameObject, 0.3f);
 
                             }
                     }
@@ -80,6 +80,9 @@ public class SelectionManager : MonoBehaviour{
             if(_selection != null){
                 if(_selection.CompareTag(llaveTag)){
                 LLavesText.llavesCantidad++;
+                if(Agarrado != null){
+                    SimpleShoot.disparar = true;
+                }
                 //Audio.llaveSonido();
                 Destroy(_selection.gameObject); //Destruir la llave
                 
@@ -96,6 +99,9 @@ public class SelectionManager : MonoBehaviour{
 
                 Agarrado.transform.parent = padre.transform;
 
+                if(_selection.gameObject.name == "Pistola"){
+                    SimpleShoot.disparar  = true;
+                }
                 
                 Debug.Log("click al objeto");
 
@@ -121,9 +127,13 @@ public class SelectionManager : MonoBehaviour{
                 Agarrado.GetComponent<Rigidbody>().useGravity = true;
                 Agarrado.GetComponent<Rigidbody>().isKinematic = false;
                 Agarrado = null;
+                
+                SimpleShoot.disparar  = false;
 
             Debug.Log("Dejar el objeto");
-           }else{Debug.Log("No hay objeto agarrado en la mano");}
+           }else{
+               Debug.Log("No hay objeto agarrado en la mano");
+               }
  
         }
 
@@ -140,23 +150,6 @@ public class SelectionManager : MonoBehaviour{
                 }
             }else{
                 Debug.Log("No se tiene seleccionada la lampara");
-            }
-        }
-
-        //Disparar con la pistola
-        if (Input.GetKeyUp("f")){
-            if(Agarrado != null){
-                print("Disparar"); //Se usa solo para debug de la lampara
-                
-                //Disparar
-                Instantiate(
-                Bala,
-                PuntaPistola.position,
-                PuntaPistola.rotation
-            );
-
-            }else{
-                Debug.Log("No tienes una pistola");
             }
         }
 

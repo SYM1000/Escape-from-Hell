@@ -10,6 +10,7 @@ public class SimpleShoot : MonoBehaviour
     public GameObject muzzleFlashPrefab;
     public Transform barrelLocation;
     public Transform casingExitLocation;
+    public static bool disparar;
 
 
     public float shotPower = 100f;
@@ -18,12 +19,12 @@ public class SimpleShoot : MonoBehaviour
     {
         if (barrelLocation == null)
             barrelLocation = transform;
+        disparar = false;
     }
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
+        if (Input.GetButtonDown("Fire1") && disparar == true){
             GetComponent<Animator>().SetTrigger("Fire");
         }
     }
