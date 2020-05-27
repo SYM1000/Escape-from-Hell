@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +16,12 @@ public class SelectionManager : MonoBehaviour{
     private Transform _selection; //referencia al objeto que esta siendo seleccionado
     private Transform Agarrado; //referencia al objeto que se va a tener en la mano
     //private Bolean agarrandoUnObjeto = false;
+
+    public GameObject sangre;
+    public GameObject sangrazo;
+    public GameObject colon;
+    public GameObject intestinos;
+    public GameObject cadaver;
 
     private void Start() {
         _selection = null;
@@ -66,7 +72,24 @@ public class SelectionManager : MonoBehaviour{
                     if ( SimpleShoot.disparar == true && Input.GetButtonDown("Fire1")){
                         if(Agarrado != null){
 
-                            Destroy(selection.gameObject, 0.3f);
+                            
+                            Instantiate(sangre,
+                                        new Vector3(selection.transform.position.x, selection.transform.position.y + 1.1f, selection.transform.position.z),
+                                        selection.transform.rotation);
+
+                            Instantiate(sangrazo,
+                                        new Vector3(selection.transform.position.x, selection.transform.position.y + 0.9f, selection.transform.position.z),
+                                        selection.transform.rotation);
+
+                            Instantiate(sangre,
+                                        new Vector3(selection.transform.position.x, selection.transform.position.y + 0.5f, selection.transform.position.z),
+                                        selection.transform.rotation);
+
+                            Instantiate(sangre,
+                                        new Vector3(selection.transform.position.x + 0.5f, selection.transform.position.y + 0.5f, selection.transform.position.z),
+                                        selection.transform.rotation);
+
+                            Destroy(selection.gameObject, 0.25f);
 
                             }
                     }
