@@ -23,9 +23,13 @@ public class SelectionManager : MonoBehaviour{
     public GameObject intestinos;
     public GameObject cadaver;
 
+    public AudioClip collectSound;
+    private AudioSource audio;
+
     private void Start() {
         _selection = null;
         Agarrado = null;
+        audio = GetComponent<AudioSource>();
         
     }
     void Update(){
@@ -35,7 +39,7 @@ public class SelectionManager : MonoBehaviour{
             var selectionRender = _selection.GetComponent<Renderer>();
             selectionRender.material = materialAnterior;
             _selection = null;
-            SimpleShoot.disparar = true;
+            //SimpleShoot.disparar = true;
             print("Listo para disparar");
         }
 
@@ -106,7 +110,7 @@ public class SelectionManager : MonoBehaviour{
                 if(Agarrado != null){
                     SimpleShoot.disparar = true;
                 }
-                //Audio.llaveSonido();
+                audio.PlayOneShot(collectSound, 10);
                 Destroy(_selection.gameObject); //Destruir la llave
                 
                 

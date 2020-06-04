@@ -21,5 +21,6 @@ public class IralHospital : MonoBehaviour
         print("Cambio de escena al hospital");
         //SceneManager.LoadScene("Hospital");
         SceneManager.LoadScene(6);
+        //LLaves se pueden reiniciar a 0 aqui
     }
 }
