@@ -93,35 +93,35 @@ public class PuertaRoja : MonoBehaviour{
             if (doorState == DoorState.Closed && !doorAnim.isPlaying){
 
                 if (LLavesText.llavesCantidad >= CantidadDeLLaves){
-                    doorAnim.Play("Door_Open");
+                    doorAnim.Play("RojaAbrir");
                     doorState = DoorState.Opened;
                     //Ganar el juego
-                    SceneManager.LoadScene("YouWin", LoadSceneMode.Additive);
+                    //SceneManager.LoadScene("YouWin", LoadSceneMode.Additive);
 
 
                 }else{
-                    doorAnim.Play("Door_Jam");
+                    doorAnim.Play("RojaAbrir");
                     doorState = DoorState.Jammed;
                 }
 
             }
 
             if (doorState == DoorState.Closed && (LLavesText.llavesCantidad >= CantidadDeLLaves) && !doorAnim.isPlaying){
-                doorAnim.Play("Door_Open");
+                doorAnim.Play("RojaAbrir");
                 doorState = DoorState.Opened;
             }
 
             if (doorState == DoorState.Opened && !doorAnim.isPlaying){
-                doorAnim.Play("Door_Close");
+                doorAnim.Play("RojaAbrir");
                 doorState = DoorState.Closed;
             }
 
             if (doorState == DoorState.Jammed && !(LLavesText.llavesCantidad >= CantidadDeLLaves)){
-                doorAnim.Play("Door_Jam");
+                doorAnim.Play("RojaAbrir");
                 doorState = DoorState.Jammed;
 
             }else if (doorState == DoorState.Jammed && (LLavesText.llavesCantidad >= CantidadDeLLaves) && !doorAnim.isPlaying){
-                doorAnim.Play("Door_Open");
+                doorAnim.Play("RojaAbrir");
                 doorState = DoorState.Opened;
             }
         }
