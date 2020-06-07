@@ -81,7 +81,11 @@ public class PuertaRoja : MonoBehaviour{
             }else{
 
                 Debug.Log("Necesitas llaves");
+                if(LLavesText.llavesCantidad >= CantidadDeLLaves){
+                    texto.GetComponent<Text>().text = "Preciona K para salir del infierno";
+                }else{
                 texto.GetComponent<Text>().text = "Necesitas " + (CantidadDeLLaves - LLavesText.llavesCantidad) + " llaves para abrir la puerta";
+                    }
                 doorCollider.enabled = true;
             }
         }

@@ -18,6 +18,6 @@ public class GanarScript : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        SceneManager.LoadScene("YouWin", LoadSceneMode.Additive);
+        SceneManager.LoadScene("YouWin");
     }
 }

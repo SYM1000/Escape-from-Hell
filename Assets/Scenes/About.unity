@@ -730,7 +730,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: El objetivo de este juego es poder salir del hospital del infierno, hay
+  m_Text: El objetivo de este juego es poder salir del hospital del infierno. hay
     enemigos asechando por los pasillos y deben ser evitados o eliminados. Encuentra
     las 10 llaves para poder abrir la puerta roja que te dara tu libertad.
 --- !u!222 &766802258
