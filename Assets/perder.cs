@@ -20,8 +20,9 @@ public class perder : MonoBehaviour
     private void OnTriggerEnter(Collider c) {
 
         if(c.tag == "Player"){
-                Destroy(c.gameObject);
-                SceneManager.LoadScene("GameOver", LoadSceneMode.Additive);
+                //Destroy(c.gameObject);
+                //SceneManager.LoadScene("GameOver", LoadSceneMode.Additive);
+                SceneManager.LoadScene(3);
         }
     }
 }
