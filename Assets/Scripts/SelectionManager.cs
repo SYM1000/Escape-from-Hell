@@ -39,7 +39,7 @@ public class SelectionManager : MonoBehaviour{
             var selectionRender = _selection.GetComponent<Renderer>();
             selectionRender.material = materialAnterior;
             _selection = null;
-            //SimpleShoot.disparar = true;
+            SimpleShoot.disparar = true;
             print("Listo para disparar");
         }
 
