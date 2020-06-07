@@ -68,8 +68,8 @@ public class PuertaRoja : MonoBehaviour{
 
             if (doorState == DoorState.Opened){
 
-                Debug.Log("Preciona K para cerrar");
-                texto.GetComponent<Text>().text = "Preciona K para cerrar";
+                //Debug.Log("Preciona K para cerrar");
+                //texto.GetComponent<Text>().text = "Preciona K para cerrar";
                 doorCollider.enabled = false;
 
             }else if (doorState == DoorState.Closed && (LLavesText.llavesCantidad >= CantidadDeLLaves) ){
@@ -100,7 +100,7 @@ public class PuertaRoja : MonoBehaviour{
 
 
                 }else{
-                    doorAnim.Play("RojaAbrir");
+                    //doorAnim.Play("RojaAbrir");
                     doorState = DoorState.Jammed;
                 }
 
@@ -112,12 +112,12 @@ public class PuertaRoja : MonoBehaviour{
             }
 
             if (doorState == DoorState.Opened && !doorAnim.isPlaying){
-                doorAnim.Play("RojaAbrir");
+                //doorAnim.Play("RojaAbrir");
                 doorState = DoorState.Closed;
             }
 
             if (doorState == DoorState.Jammed && !(LLavesText.llavesCantidad >= CantidadDeLLaves)){
-                doorAnim.Play("RojaAbrir");
+                //doorAnim.Play("RojaAbrir");
                 doorState = DoorState.Jammed;
 
             }else if (doorState == DoorState.Jammed && (LLavesText.llavesCantidad >= CantidadDeLLaves) && !doorAnim.isPlaying){
