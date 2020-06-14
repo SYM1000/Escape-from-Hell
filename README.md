@@ -69,3 +69,4 @@ With ❤️ from 🇲🇽 by **Santiago Yeomans** and **Ulises Bojorquez**
 
 ### Follow Ulises 👇
 * [GitHub](https://github.com/UlisesBojorquez) - Follow Ulises on GitHub!
+* [LinkedIn](https://www.linkedin.com/in/ulises-boj%C3%B3rquez-ortiz-251722179/) - Follow Ulises on LinkedIn!
