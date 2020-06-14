@@ -5,6 +5,8 @@ Al principio, el juego nos sitúa en un cuarto oscuro y desconocido en el que se
 
 ## ScreenShots 📸👇
 
+![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Home.png)
+
 
 ## Controles 🕹
 ### Los controles que te permitirán controlar al jugador son sencillos, y son:
