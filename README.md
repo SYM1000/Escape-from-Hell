@@ -50,7 +50,8 @@ Mouse Click Derecho -> Soltar objeto
 ### Descarga la última version del Juego ¡YA!
 
 **Descarga el archivo ejecutable para MAC OS**
-_Obten el de esta dirección_
+
+_Obten el juego de esta dirección_
 ```
 https://drive.google.com/drive/folders/1VYNdmOGYYUQP7WiB03crhZetBDyONSys?usp=sharing 
 ```
