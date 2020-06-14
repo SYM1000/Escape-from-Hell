@@ -11,7 +11,7 @@ Al principio, el juego nos sitúa en un cuarto oscuro y desconocido en el que se
 ### Busca la salida 🚪
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Captura%20de%20Pantalla%202020-06-13%20a%20la(s)%2021.04.23.png)
 
-### Piérdete en los pasillos  
+### Piérdete en los pasillos 😱
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Gameplay1.gif)
 
 ### Resuelve el acertijo del perrito muerto 🧩
@@ -23,7 +23,7 @@ Al principio, el juego nos sitúa en un cuarto oscuro y desconocido en el que se
 ### Encuentra todas la llaves 🔑
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Captura%20de%20Pantalla%202020-06-13%20a%20la(s)%2021.08.08.png)
 
-### Tú puedes ser el siguente en morir 
+### Tú puedes ser el siguente en morir ☠️
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Captura%20de%20Pantalla%202020-06-13%20a%20la(s)%2021.08.41.png)
 
 ### Pierdete en el mapa🚶‍♂️🏴‍☠️
