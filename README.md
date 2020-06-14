@@ -8,34 +8,34 @@ Al principio, el juego nos sitúa en un cuarto oscuro y desconocido en el que se
 ### ¡Comienza el juego!
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Home.png)
 
-### Busca la salida
+### Busca la salida 🚪
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Captura%20de%20Pantalla%202020-06-13%20a%20la(s)%2021.04.23.png)
 
-### Piérdete en los pasillos 
+### Piérdete en los pasillos  
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Gameplay1.gif)
 
-### Resuelve el acertijo del perrito muerto
+### Resuelve el acertijo del perrito muerto 🧩
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Captura%20de%20Pantalla%202020-06-13%20a%20la(s)%2021.06.27.png)
 
-### Investiga
+### Investiga 🔍
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Captura%20de%20Pantalla%202020-06-13%20a%20la(s)%2021.07.00.png)
 
-### Encuentra todas la llaves 
+### Encuentra todas la llaves 🔑
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Captura%20de%20Pantalla%202020-06-13%20a%20la(s)%2021.08.08.png)
 
-### Tú puedes ser el siguente en morir
+### Tú puedes ser el siguente en morir 
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Captura%20de%20Pantalla%202020-06-13%20a%20la(s)%2021.08.41.png)
 
-### Pierdete en el mapa
+### Pierdete en el mapa🚶‍♂️🏴‍☠️
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Captura%20de%20Pantalla%202020-06-13%20a%20la(s)%2021.10.19.png)
 
-### Mata los enfermos del hospital
+### Mata a los enfermos del hospital 🧟‍♂️🩸
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/gameplay3.gif)
 
-### El Hospital del infierno te espera...
+### El Hospital del infierno te espera... 🏥
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/gameplay4.gif)
 
-### Encuentra la puerta roja que te liberará del infierno
+### Encuentra la puerta roja que te liberará del infierno 🚪
 ![](https://github.com/SYM1000/Escape-from-Hell/blob/master/Screenshots/Captura%20de%20Pantalla%202020-06-13%20a%20la(s)%2021.12.51.png)
 
 
