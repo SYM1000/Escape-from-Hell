@@ -65,5 +65,4 @@ With ❤️ from 🇲🇽 by **Santiago Yeomans** and **Ulises Bojorquez**
 * [WebPage](www.santiagoyeomans.com) - Check out my web page!
 
 ### Follow Ulises 👇
-* [LinkedIn](https://www.linkedin.com/in/santiago-yeomans/) - Follow me on LinkedIn!
 * [GitHub](https://github.com/UlisesBojorquez) - Follow Ulises on GitHub!
