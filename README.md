@@ -96,7 +96,7 @@ With ❤️ from 🇲🇽 by **Santiago Yeomans** and **Ulises Bojorquez**
 ### Follow Me 👇
 * [LinkedIn](https://www.linkedin.com/in/santiago-yeomans/) - Follow me on LinkedIn!
 * [GitHub](https://github.com/SYM1000) - Follow me on GitHub!
-* [WebPage](www.santiagoyeomans.com) - Check out my web page!
+* [WebPage](https://www.santiagoyeomans.com/) - Check out my web page!
 
 ### Follow Ulises 👇
 * [GitHub](https://github.com/UlisesBojorquez) - Follow Ulises on GitHub!
